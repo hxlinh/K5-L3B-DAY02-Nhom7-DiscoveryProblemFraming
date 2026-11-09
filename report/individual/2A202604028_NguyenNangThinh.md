@@ -16,12 +16,12 @@ Lăng kính: **Lặp lại** · **Tốn thời gian** · **Cần đọc, tổng 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Cần đọc, tổng hợp nhiều thông tin | Khi bắt tay vào làm Khoá luận, tôi muốn tìm được khoảng trống nghiên cứu | | |
-| 2 | Pain từ người khác | Khi nộp báo cáo tiến độ cho GVHD, tôi muốn nhận được phản hồi sớm nhất  | | |
-| 3 | Tốn thời gian | Khi cần trích dẫn một nguồn tài liệu đã đọc, tôi muốn tìm lại đúng trang và đúng thông tin để không phải đọc lại cả tài liệu | | |
-| 4 | Lặp lại | Khi giảng viên góp ý về bài của tôi, tôi muốn biết mình chính xác sẽ phải làm gì | | |
-| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi viết cơ sở lý thuyết, tôi muốn nhanh chóng so sánh các nghiên cứu trong cùng một chủ đề để viết vào bài luận | | |
-| 6 | Tốn thời gian | Khi chuẩn bị nộp bài luận, tôi muốn các mục phải đầy đủ, rõ ràng theo quy định của Khoa để không bị trả lại | | |
+| 1 | Cần đọc, tổng hợp nhiều thông tin | Khi bắt tay vào làm Khoá luận, tôi muốn tìm được khoảng trống nghiên cứu | Sinh viên | Đọc khoảng 20 papers, nhưng trong số đó có gần 1 nửa là không ảnh hưởng tới đề tài. Tốn khoảng 1 giờ mỗi ngày chỉ để đọc |
+| 2 | Pain từ người khác | Khi nộp báo cáo tiến độ cho GVHD, tôi muốn nhận được phản hồi sớm nhất  | Sinh viên, Giảng viên | Thường nhận phản hồi sau 4 ngày. |
+| 3 | Tốn thời gian | Khi cần trích dẫn một nguồn tài liệu đã đọc, tôi muốn tìm lại đúng trang và đúng thông tin để không phải đọc lại cả tài liệu | Sinh viên | Chỉ trong vòng 1 tháng, có 5 lần phải đọc lại cả tài liệu để tìm đúng trích dẫn |
+| 4 | Lặp lại | Khi giảng viên góp ý về bài của tôi, tôi muốn biết mình chính xác sẽ phải làm gì | Sinh viên, Giảng viên | Hàng tuần khi gặp giảng viên, tôi nghe rất kỹ từng góp ý nhưng chỉ ghi nhớ được khoảng 50% để áp dụng vào bài làm của mình |
+| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi viết cơ sở lý thuyết, tôi muốn nhanh chóng so sánh các nghiên cứu trong cùng một chủ đề để viết vào bài luận | Sinh viên | Đọc khoảng 20 papers và mất 5 giờ để lập bảng và so sánh thủ công cho một mục |
+| 6 | Tốn thời gian | Khi chuẩn bị nộp bài luận, tôi muốn các mục phải đầy đủ, rõ ràng theo quy định của Khoa để không bị trả lại | Sinh viên | Từng bị bắt làm lại 1 lần vì làm thiếu mục Kết quả thực nghiệm theo quy định của Khoa |
 
 **Nếu có dùng AI để gợi ý thêm:** Sau khi tự scan 6 ý, tôi bỏ ý 1, 4, 6 và giữ lại 2, 3, 5.
 
@@ -166,16 +166,22 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 Khi nghe top 3 của các bạn khác, tôi cảm thấy các problems của mình còn khá hạn chế và chưa thực sự rộng
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 Tất nhiên là có. Nhất là với thời đại AI bùng nổ thì việc nghĩ ra giải pháp trước khi hiểu vấn đề là khá phổ biến. Khi đó chúng em phải bắt đầu lại mọi thứ từ đầu, đi sâu vào vấn đề, phân tích nó từ đó mới dần đưa ra giải pháp cụ thể
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 Có, tôi đã thay đổi quan điểm sau khi nhóm thảo luận và kiểm chứng với người dùng. Ban đầu, tôi cho rằng cả việc tổng hợp kiến thức lẫn tìm kiếm đề thi đều là hai vấn đề phổ biến mà sinh viên gặp phải trước kỳ thi. Tuy nhiên, khi xem xét kết quả phỏng vấn và khảo sát, tôi nhận ra không phải sinh viên nào cũng gặp khó khăn trong việc tìm đề thi, vì một số môn đã được giảng viên cung cấp tài liệu và đề thi ôn tập.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 Có, điều khiến tôi bất ngờ là vấn đề tìm kiếm đề thi và tài liệu ôn tập không phổ biến ở tất cả sinh viên như nhóm dự đoán ban đầu. Trong 3 sinh viên được phỏng vấn, có 2 người mất hơn 3 tiếng để tìm kiếm và tổng hợp tài liệu, nhưng 1 người cho biết học nhóm đã đáp ứng đủ nhu cầu.
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 Điều khó nhất là xác định đúng vấn đề cốt lõi của người dùng mà không vô tình đưa solution vào trong cách mô tả vấn đề.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
  Tôi sẽ dành nhiều thời gian hơn cho giai đoạn Discovery và Problem Framing, thay vì vội vàng đưa ra giải pháp. Tôi sẽ phản biện nhóm mạnh hơn về độ tin cậy của dữ liệu khảo sát, vì nhóm mới phỏng vấn 3 sinh viên và khảo sát 4 người nên chưa đủ cơ sở để khẳng định đây là vấn đề phổ biến.
+
 **6.7. Hiểu bài:** 
 Vấn đề nhóm tôi xác định là sinh viên mất nhiều thời gian tổng hợp kiến thức từ nhiều tài liệu và tìm kiếm câu hỏi ôn tập phù hợp trước kỳ thi. Quy trình ôn tập hiện tại gồm 7 bước, trong đó hai điểm nghẽn chính là bước 3 (tổng hợp kiến thức) và bước 4 (tìm đề thi, bài tập). Nhóm đặt mục tiêu giảm ít nhất 40% thời gian thực hiện hai bước này, đồng thời đạt độ bao phủ CLO từ 90% và khả năng phát hiện chủ đề yếu với recall ít nhất 80%. Về phạm vi, AI chỉ xử lý tài liệu do sinh viên cung cấp và CLO được cung cấp, không tự tìm kiếm nguồn bên ngoài hay dự đoán đề thi thực tế. Nhóm lựa chọn AI Workflow thay vì Agent vì quy trình đã có các bước cố định, đầu vào rõ ràng và không cần AI tự lập kế hoạch hay quyết định hành động tiếp theo. AI sẽ hỗ trợ tổng hợp kiến thức, tạo câu hỏi và phát hiện lỗ hổng kiến thức, còn sinh viên vẫn kiểm tra, chỉnh sửa và đưa ra quyết định cuối cùng. Vì vậy, nhóm chọn hướng Augment thay vì Automate, với quyết định Go có điều kiện: triển khai thử nghiệm trên một môn học với 5–10 sinh viên trước khi mở rộng.
 
