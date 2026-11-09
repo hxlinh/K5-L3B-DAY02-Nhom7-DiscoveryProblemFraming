@@ -18,9 +18,9 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | Linh | Khi chuẩn bị cho kỳ kiểm tra một môn học, tôi muốn tổng hợp kiến thức từ nhiều nguồn tài liệu và có hệ thống câu hỏi, đề thi phù hợp để luyện tập, nhằm ôn tập hiệu quả và đạt kết quả tốt trong kỳ thi | Sinh viên đại học chuẩn bị kiểm tra giữa kỳ/cuối kỳ | Bước 3 (tổng hợp kiến thức, ~60 phút) và bước 4 (tìm đề, bài tập, ~45 phút) | "Lần gần nhất bạn ôn một môn là khi nào, mất bao lâu để gom tài liệu?"; "Nếu không dùng AI, Notion + checklist có giảm được một nửa thời gian không?" |
-| 2 | Linh | Khi cần nhớ lại một câu trả lời mà lớp từng thảo luận, tôi muốn tìm ra ngay trong nhóm chat, để không phải hỏi lại cả lớp | Sinh viên trong lớp dùng chung nhóm chat | Bước đọc lại cả luồng tin nhắn để hiểu ngữ cảnh (~6 trong 10–15 phút/lần) | "Ai ngoài bạn gặp vấn đề này? Bạn có bằng chứng không?" |
-| 3 | Linh | Khi chuẩn bị nộp bài lab lúc 22h, tôi muốn biết bài còn thiếu mục nào, để không bị trừ điểm vì sai cấu trúc | Sinh viên làm bài lab | Bước đối chiếu từng mục với yêu cầu đề (~7 trong 20 phút/bài) | "Checklist đơn giản có đủ không, vì sao cần AI?" |
+| 1 | Hoàng Xuân Lĩnh | Khi chuẩn bị cho kỳ kiểm tra một môn học, tôi muốn tổng hợp kiến thức từ nhiều nguồn tài liệu và có hệ thống câu hỏi, đề thi phù hợp để luyện tập, nhằm ôn tập hiệu quả và đạt kết quả tốt trong kỳ thi | Sinh viên đại học chuẩn bị kiểm tra giữa kỳ/cuối kỳ | Bước 3 (tổng hợp kiến thức, ~60 phút) và bước 4 (tìm đề, bài tập, ~45 phút) | "Lần gần nhất bạn ôn một môn là khi nào, mất bao lâu để gom tài liệu?"; "Nếu không dùng AI, Notion + checklist có giảm được một nửa thời gian không?" |
+| 2 | Hoàng Xuân Lĩnh | Khi cần nhớ lại một câu trả lời mà lớp từng thảo luận, tôi muốn tìm ra ngay trong nhóm chat, để không phải hỏi lại cả lớp | Sinh viên trong lớp dùng chung nhóm chat | Bước đọc lại cả luồng tin nhắn để hiểu ngữ cảnh (~6 trong 10–15 phút/lần) | "Ai ngoài bạn gặp vấn đề này? Bạn có bằng chứng không?" |
+| 3 | Hoàng Xuân Lĩnh | Khi chuẩn bị nộp bài lab lúc 22h, tôi muốn biết bài còn thiếu mục nào, để không bị trừ điểm vì sai cấu trúc | Sinh viên làm bài lab | Bước đối chiếu từng mục với yêu cầu đề (~7 trong 20 phút/bài) | "Checklist đơn giản có đủ không, vì sao cần AI?" |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
