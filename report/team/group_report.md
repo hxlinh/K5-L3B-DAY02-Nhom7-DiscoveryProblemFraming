@@ -5,10 +5,10 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: Nhom7
 - Thành viên: xem `TEAM.md`
-- Candidate problem được chọn (1 câu):
-- Quyết định cuối: Go / Not Yet / No-Go
+- Candidate problem được chọn (1 câu): Khi chuẩn bị cho một kỳ kiểm tra, sinh viên muốn gom và tổng hợp tài liệu từ nhiều nguồn cùng bộ câu hỏi luyện tập sát nội dung môn, để ôn đủ phạm vi và tốn ít thời gian hơn.
+- Quyết định cuối: Go (có điều kiện, pilot nhỏ)
 
 ---
 
@@ -18,9 +18,9 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
+| 1 | Linh | Khi chuẩn bị cho kỳ kiểm tra một môn học, tôi muốn tổng hợp kiến thức từ nhiều nguồn tài liệu và có hệ thống câu hỏi, đề thi phù hợp để luyện tập, nhằm ôn tập hiệu quả và đạt kết quả tốt trong kỳ thi | Sinh viên đại học chuẩn bị kiểm tra giữa kỳ/cuối kỳ | Bước 3 (tổng hợp kiến thức, ~60 phút) và bước 4 (tìm đề, bài tập, ~45 phút) | "Lần gần nhất bạn ôn một môn là khi nào, mất bao lâu để gom tài liệu?"; "Nếu không dùng AI, Notion + checklist có giảm được một nửa thời gian không?" |
+| 2 | Linh | Khi cần nhớ lại một câu trả lời mà lớp từng thảo luận, tôi muốn tìm ra ngay trong nhóm chat, để không phải hỏi lại cả lớp | Sinh viên trong lớp dùng chung nhóm chat | Bước đọc lại cả luồng tin nhắn để hiểu ngữ cảnh (~6 trong 10–15 phút/lần) | "Ai ngoài bạn gặp vấn đề này? Bạn có bằng chứng không?" |
+| 3 | Linh | Khi chuẩn bị nộp bài lab lúc 22h, tôi muốn biết bài còn thiếu mục nào, để không bị trừ điểm vì sai cấu trúc | Sinh viên làm bài lab | Bước đối chiếu từng mục với yêu cầu đề (~7 trong 20 phút/bài) | "Checklist đơn giản có đủ không, vì sao cần AI?" |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
@@ -35,40 +35,42 @@
 
 | Cluster | Các candidate | Pattern chung |
 |---|---|---|
-| A | | |
-| B | | |
-| C | | |
+| A | Ôn thi: gom tài liệu và câu luyện tập (#1) | Gom thông tin từ nhiều nguồn rồi tổng hợp thành thứ dùng được để học |
+| B | Tìm lại câu trả lời trong nhóm chat (#2) | Tìm đúng thông tin trong nguồn rời rạc, không có cấu trúc |
+| C | Kiểm tra bài lab thiếu mục (#3) | Đối chiếu bản nháp với yêu cầu để chỉ ra thiếu sót |
 
 ### 2.3. Opportunity Solution Tree rút gọn
 
 Gốc là **1 outcome**. Nhánh là **opportunity** (nhu cầu, pain), không phải tính năng hay công cụ.
 
 ```text
-OUTCOME: 
-├── Opportunity A: 
-├── Opportunity B: 
-└── Opportunity C: 
+OUTCOME: Giảm thời gian sinh viên chuẩn bị ôn thi một môn mà vẫn bao phủ đủ nội dung môn học 
+├── Opportunity A: Tài liệu môn học nằm rải rác ở slide, PDF, ghi chú, nhóm chat nên khó gom và tìm lại 
+├── Opportunity B: Tổng hợp kiến thức từ nhiều nguồn mất nhiều thời gian và khó chắc là không bỏ sót 
+└── Opportunity C: Thiếu câu luyện tập sát nội dung môn và khó biết mình còn yếu phần nào 
 ```
 
 Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
--
+- "Kho upload tài liệu cho sinh viên" ← solution, gạch khỏi tầng này
+- "Chatbot hỏi đáp tài liệu môn học" ← solution, gạch khỏi tầng này
+- "AI tự sinh đề thi" ← solution, gạch khỏi tầng này
 
 ### 2.4. Chấm điểm shortlist (1–5)
 
 | Candidate | Actor rõ | Quy trình rõ | Pain có bằng chứng | Impact đo được | Vừa sức lab | So sánh được No AI/Rule/Workflow/Agent | Nhóm hiểu domain | Tổng |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| | | | | | | | | |
-| | | | | | | | | |
-| | | | | | | | | |
+| Ôn thi: gom tài liệu và câu luyện tập (#1) | 5 | 5 | 3 | 4 | 4 | 5 | 5 | **31** |
+| Kiểm tra bài lab thiếu mục (#3) | 4 | 4 | 3 | 3 | 5 | 3 | 5 | **27** |
+| Tìm lại câu trả lời trong nhóm chat (#2) | 4 | 3 | 3 | 3 | 3 | 4 | 4 | **24** |
 
-**Candidate được chọn:**
+**Candidate được chọn:** Ôn thi: gom và tổng hợp tài liệu từ nhiều nguồn, kèm bộ câu hỏi luyện tập sát nội dung môn.
 
-**Vì sao chọn:**
+**Vì sao chọn:** Điểm cao nhất (31/35). Actor rõ, quy trình 7 bước vẽ được với bottleneck cụ thể ở bước 3 và 4, có baseline ước tính (~240 phút) để đo trước/sau, so sánh được cả No AI / Rule / Workflow / Agent, và cả nhóm đều là sinh viên nên hiểu domain. Phạm vi vừa sức để làm prototype trên một môn.
 
-**Vì sao loại các candidate còn lại:**
+**Vì sao loại các candidate còn lại:** "Tìm lại câu trả lời trong nhóm chat" có tần suất cao nhưng cần đọc dữ liệu chat riêng tư và khó đo "tìm đúng". "Kiểm tra bài lab thiếu mục" có thể giải bằng checklist hoặc rule, nên ít cơ sở để so sánh các mức can thiệp AI.
 
-**Xử lý bất đồng (nếu có):**
+**Xử lý bất đồng (nếu có):** Không có bất đồng đáng kể: candidate ôn thi dẫn đầu cả về điểm số lẫn bằng chứng từ kiểm chứng ở CP4.
 
 ---
 
