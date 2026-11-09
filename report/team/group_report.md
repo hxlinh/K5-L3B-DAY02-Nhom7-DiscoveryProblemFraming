@@ -78,50 +78,57 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
 |---:|---|---|---:|---:|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-
-*Điền 4–6 giả định; xóa dòng thừa.*
-
-Giả định nhóm kiểm chứng trong buổi này:
+| 1 | Sinh viên mất từ vài giờ trở lên cho mỗi môn để tổng hợp tài liệu | Value | 5 | 1 | ✅ |
+| 2 | Tài liệu bị phân tán (slide, PDF, ghi chú, nhóm chat) khiến việc tìm lại mất nhiều thời gian | Value | 4 | 1 | ✅ |
+| 3 | Sinh viên khó tìm đủ đề thi cũ hoặc câu luyện sát nội dung môn | Value | 5 | 1 | ✅ |
+| 4 | Thiếu bao quát nội dung khi ôn dẫn đến bỏ sót kiến thức trong bài thi | Value | 4 | 0 | Sau lab |
+| 5 | Sinh viên sẵn sàng đưa tài liệu môn học lên một công cụ bên thứ ba | Viability | 5 | 0 | Hỏi trước |
+| 6 | Sinh viên tin câu hỏi do công cụ tạo ra đủ sát với đề thi thật | Usability | 4 | 0 | ✅ |
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Nhóm phỏng vấn 3 sinh viên đã thi ít nhất một kỳ trong 6 tháng gần đây và làm poll 4 người trong lớp.
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Người được hỏi | A, sinh viên năm ba, thi môn giải tích 2 |
+| Câu nói đáng nhớ nhất | Giải tích là dễ, phần lâu nhất là tìm tài liệu để học |
+| Lần gần nhất gặp vấn đề này | 3 tuần trước khi thi, mất khoảng 4 giờ cho việc tìm tài liệu tổng ôn từ các nguồn khác nhau |
+| Hiện đang xử lý bằng cách nào (workaround)? | Note hết tài liệu vào 1 chỗ |
+| Mất bao lâu, bao lần? | Mất khoảng 4 giờ cho việc tổng hợp tài liệu, khoảng 1 tuần 1 lần |
+| Insight / opportunity rút ra | Pain nằm ở phần tìm tài liệu |
 
 Tổng hợp:
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| | | | |
+| Phỏng vấn | 3 | 2/3 người mất trên 3 giờ để tìm và tổng hợp tài liệu | 1 người nói chỉ cần học nhóm là đủ |
+| Poll trong lớp | 4 | 2/4 người từng phải tìm lại đề cũ từ nhiều nguồn | 2/4 người còn lại nói rằng lấy đề từ Khoa là đủ | 
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
+
+- **Thu hẹp phạm vi:** từ tổng hợp kiến thức và tìm đề luyện tập thành gom và tổng hợp tài liệu ôn thi từ nhiều nguồn.
+- **Lý do:** 2/3 người phỏng vấn mất trên 3 giờ ở việc tìm và tổng hợp tài liệu. Trong poll, 2/4 người từng phải tìm lại đề cũ từ nhiều nguồn, nhưng 2/4 người còn lại nói đề từ Khoa là đủ. Điều này cho thấy pain về đề luyện tập không đồng đều giữa các sinh viên và các môn.
+- **Bottleneck:** giữ bước 3 (đọc, phân loại, tổng hợp), giảm trọng tâm ở bước 4 (tìm đề). Bước 4 chỉ là vấn đề với những môn không có đề cũ từ Khoa.
+- **Phương án không dùng AI:** giữ nguyên (Notion/Google Docs theo chương, thư mục, checklist), vì một người phỏng vấn đã dùng cách này và vẫn mất nhiều thời gian ở bước tìm tài liệu.
+- **Giả định 3** (khó tìm đủ đề cũ) vẫn chưa đủ bằng chứng, vì tín hiệu phản bác từ poll còn mạnh.
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| Notion / Google Docs (ghi chú theo chương) | https://www.notion.so | Bước 3: tổng hợp và lưu ghi chú | Miễn phí, quen thuộc, người phỏng vấn đang dùng | Không tự tìm hay gom tài liệu từ nguồn khác; phụ thuộc người nhập tay | Workaround này đã có sẵn, nên giải pháp mới phải làm được thứ nó chưa làm: gom tự động từ nhiều nguồn |
+| NotebookLM (hỏi đáp dựa trên tài liệu tải lên) | https://notebooklm.google.com | Bước 2 và 3: phân loại và tổng hợp từ tài liệu đã tải lên | Trả lời dựa trên tài liệu của chính người dùng | Phải tải tài liệu môn học lên; rủi ro bản quyền và quy định của khoa (A5); không tự tìm nguồn ngoài | Gần nhất với ý tưởng của nhóm, nên là điểm kiểm chứng chính cho A5 trước khi chọn hướng |
+| Quizlet | https://quizlet.com | Bước 6: luyện tập và đối chiếu | Luyện tập lặp lại có hệ thống | Không tổng hợp từ tài liệu gốc; cần người tự tạo thẻ | Phần luyện tập đã có công cụ phổ biến, nên pain của nhóm nằm ở bước trước đó |
+| Đề thi cũ của Khoa / thư viện | https://tailieuvnu.com/ | Bước 4: tìm đề thi và bài tập | Đúng cấu trúc đề thật | Không có cho mọi môn; 2/4 người trong poll nói đây là đủ | Cho thấy pain về đề chỉ có ở một số môn; không nên xem là vấn đề chung của mọi sinh viên |
+
+#### Kết luận research
+Một phần quy trình đã có công cụ làm được (ghi chú, luyện tập lặp lại). Phần gom tài liệu và sinh câu luyện bám nội dung môn còn trống, nhưng chưa đủ bằng chứng để xây mới.
+Hướng hợp lý: Rule gom tài liệu theo chương/CLO → AI soạn câu luyện và tóm tắt từ tài liệu đã gom → SV duyệt, đối chiếu với tài liệu gốc → ôn phần yếu.
 
 ---
-
 ## 4. Quy trình trước/sau (CP5)
 
 ### 4.1. Quy trình hiện tại
