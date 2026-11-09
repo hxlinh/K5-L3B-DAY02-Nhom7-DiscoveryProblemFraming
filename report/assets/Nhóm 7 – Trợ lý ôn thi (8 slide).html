@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trợ lý ôn thi có AI – Problem & Giải pháp</title>
+<style>
+:root{--bg:#f7f7fb;--fg:#16162a;--mut:#5d5d78;--card:#fff;--bd:#dcdce8;--ac:#4f46e5;--ac2:#0d9488;--bad:#dc2626;--ok:#16a34a;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12121c;--fg:#f1f1f8;--mut:#a3a3bd;--card:#1c1c2b;--bd:#32324a;--ac:#8b85ff;--ac2:#2dd4bf;--bad:#f87171;--ok:#4ade80;color-scheme:dark}}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.s{position:absolute;inset:0;padding:5vh 7vw 9vh;display:none;flex-direction:column;justify-content:center;gap:2.2vh;overflow-y:auto}
+.s.on{display:flex}
+h1{font-size:clamp(28px,5.2vw,60px);line-height:1.15}
+h2{font-size:clamp(22px,3.6vw,40px);line-height:1.2;color:var(--ac)}
+p,li,td,th{font-size:clamp(14px,1.9vw,22px);line-height:1.5}
+.mut{color:var(--mut)}ul{padding-left:1.2em}li{margin:.35em 0}
+.k{font-size:clamp(12px,1.3vw,16px);letter-spacing:.1em;text-transform:uppercase;color:var(--ac2);font-weight:700}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 18px}
+.c b{display:block;margin-bottom:4px}
+.big{font-size:clamp(32px,6vw,72px);font-weight:800;color:var(--ac);line-height:1}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.st{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:10px 12px;flex:1 1 130px;font-size:clamp(12px,1.5vw,18px)}
+.st small{display:block;color:var(--mut);margin-top:3px}
+.st.bn{border-color:var(--bad);box-shadow:0 0 0 1px var(--bad)}
+.st.h{border-left:5px solid var(--ac2)}.st.r{border-left:5px solid #d97706}.st.a{border-left:5px solid var(--ac)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%}
+th,td{border:1px solid var(--bd);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--card);color:var(--ac)}
+.pick{background:color-mix(in srgb,var(--ac) 14%,var(--card))}
+.tag{display:inline-block;padding:2px 10px;border-radius:99px;background:var(--ac);color:#fff;font-size:.8em;font-weight:700}
+.bad{color:var(--bad)}.ok{color:var(--ok)}
+#bar{position:fixed;left:0;bottom:0;height:4px;background:var(--ac);transition:width .2s;z-index:5}
+#nav{position:fixed;right:14px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;align-items:center;z-index:5;font-size:14px;color:var(--mut)}
+#nav button{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:8px;padding:6px 14px;font-size:16px;cursor:pointer}
+.hero{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;border-radius:18px;padding:22px 26px}
+.hero h2{color:#fff}.hero p{color:#fff}
+.out{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.out div{background:rgba(255,255,255,.18);border-radius:12px;padding:12px 14px;font-size:clamp(13px,1.7vw,20px)}
+.out b{display:block;font-size:1.15em}
+.q{border-left:4px solid var(--ac2);padding:8px 12px;background:var(--card);border-radius:8px;font-size:clamp(12px,1.5vw,18px)}
+.q cite{display:block;color:var(--ac);font-style:normal;font-size:.85em;margin-top:2px}
+.lg{display:flex;gap:14px;flex-wrap:wrap;font-size:clamp(12px,1.4vw,16px);color:var(--mut)}
+</style></head><body>
+<div id="bar"></div>
+
+<section class="s"><span class="k">Nhóm 7 · Problem Statement</span>
+<h1>Sinh viên mất ~4 giờ mỗi môn để gom và tổng hợp tài liệu ôn thi, mà vẫn sợ bỏ sót</h1>
+<p class="mut">Giải pháp: Workflow có AI tổng hợp tài liệu có trích nguồn, sinh câu luyện bám môn học và chỉ ra chỗ còn yếu; sinh viên luôn là người duyệt.</p></section>
+
+<section class="s"><span class="k">1 · Problem</span><h2>Ai đau, đau ở đâu, đau đến mức nào?</h2>
+<div class="g"><div class="c"><b>Actor</b>Sinh viên ôn thi giữa kỳ / cuối kỳ</div>
+<div class="c"><b>Quy trình</b>7 bước thủ công: thu thập → phân loại → <span class="bad">tổng hợp</span> → <span class="bad">tìm đề</span> → chọn câu → làm bài → ôn chỗ yếu</div>
+<div class="c"><b>Bottleneck</b>Bước 3–4 chiếm 105 / 240 phút: tài liệu rải rác, tổng hợp và tìm câu luyện đều làm tay</div>
+<div class="c"><b>Impact</b>Tốn thời gian, dễ sót kiến thức, thiếu câu luyện sát môn, lỗ hổng chỉ lộ ra trong phòng thi</div></div>
+<p><b>Bằng chứng:</b> 2/3 người phỏng vấn mất &gt;3 giờ; 2/4 trong poll phải tìm đề từ nhiều nguồn. Nhưng 2/4 nói đề của Khoa là đủ, nên trọng tâm là <b>tổng hợp</b>, không phải tìm đề. <span class="mut">(Mẫu nhỏ, cần khảo sát thêm.)</span></p></section>
+
+<section class="s"><span class="k">2 · Solution</span>
+<div class="hero"><h2>Trợ lý ôn thi có AI: bỏ tài liệu vào, nhận lại bản ôn đủ ý, câu luyện sát môn và danh sách chỗ còn yếu</h2>
+<div class="out"><div><b>1. Bản tổng hợp</b>Theo chủ đề và chuẩn đầu ra, mỗi ý có trích nguồn</div><div><b>2. Câu luyện</b>Sinh từ chính tài liệu môn, kèm đáp án và giải thích</div><div><b>3. Chỗ còn yếu</b>Báo chủ đề chưa phủ và chủ đề làm sai</div></div></div>
+<p>Mục tiêu: giảm ≥ 40% thời gian bước 3–4 (240 phút → ~120 phút cả quy trình).</p></section>
+
+<section class="s"><span class="k">2 · Solution (giải quyết gì)</span><h2>Mỗi nỗi đau có một cách giải</h2>
+<div class="tw"><table><tr><th>Nỗi đau</th><th>Giải quyết bằng</th></tr>
+<tr><td>Tài liệu rải rác, tổng hợp tay</td><td>Một nơi chứa cả học kỳ + AI tổng hợp có nguồn</td></tr>
+<tr><td>Thiếu câu luyện sát môn</td><td>AI sinh câu bám tài liệu và CLO</td></tr>
+<tr><td>Sợ sót, không biết yếu đâu</td><td>Đối chiếu CLO, báo lỗ hổng trước khi thi</td></tr></table></div></section>
+
+<section class="s"><span class="k">2 · Solution (phần 2a)</span><h2>Quy trình 8 bước: ai làm gì</h2>
+<div class="flow">
+<div class="st h">1 Upload tài liệu + CLO<small>Sinh viên</small></div><div class="st r">2 Lưu, xếp theo môn / chương<small>Quy tắc cố định</small></div><div class="st a">3 Đọc tài liệu, đối chiếu CLO<small>AI</small></div><div class="st a">4 Tổng hợp + sinh câu luyện<small>AI</small></div><div class="st h">5 Duyệt, sửa, chọn câu<small>Sinh viên</small></div><div class="st h">6 Làm bài, AI chấm<small>Sinh viên + AI</small></div><div class="st a">7 Tìm chủ đề yếu<small>AI</small></div><div class="st h">8 Ôn lại<small>Sinh viên</small></div></div>
+<div class="lg"><span>Viền xanh lá: sinh viên</span><span>Viền cam: quy tắc cố định</span><span>Viền tím: AI</span></div></section>
+
+<section class="s"><span class="k">2 · Solution (phần 2b)</span><h2>Đầu ra trông thế nào, và giữ an toàn ra sao</h2>
+<div class="g"><div class="q"><b>Ví dụ: tổng hợp</b><br>“Chủ đề X: ý chính A, B, C.”<cite>Nguồn: Slide tuần 5, tr. 12</cite></div>
+<div class="q"><b>Ví dụ: cảnh báo</b><br>“CLO 3 chưa có tài liệu; chủ đề Y làm sai 3/4 câu.”<cite>Gợi ý ôn: Y, CLO 3</cite></div></div>
+<p><b>Ranh giới:</b> chỉ dùng tài liệu sinh viên cung cấp; không đọc được thì báo, không bịa; sinh viên có thể sửa hoặc quay về ôn thủ công.</p></section>
+
+<section class="s"><span class="k">3 · Vì sao chọn mức Workflow</span><h2>Mức đơn giản nhất mà vẫn đủ dùng</h2>
+<div class="tw"><table><tr><th>Mức</th><th>Vì sao chọn / không chọn</th></tr>
+<tr><td>No AI</td><td class="bad">Chính là cách hiện tại, đang tạo ra bottleneck; chỉ làm gọn hơn, không bớt việc</td></tr>
+<tr><td>Rule</td><td class="bad">Chỉ phân loại, tìm từ khóa; không hiểu nội dung nên không tổng hợp, không sinh câu, không map CLO</td></tr>
+<tr class="pick"><td><b>Workflow</b></td><td class="ok"><b>Chọn:</b> các bước ổn định, biết trước; cần AI hiểu nội dung nhưng không cần tự quyết hướng đi; dễ kiểm soát và đo</td></tr>
+<tr><td>Agent</td><td class="bad">Quy trình đã rõ nên chưa cần AI tự quyết; khó kiểm soát, tốn kém; để phiên bản sau</td></tr></table></div></section>
+
+<section class="s"><span class="k">4 · Kiểm soát &amp; quyết định</span><h2><span class="tag">GO CÓ ĐIỀU KIỆN</span> Augment, không automate</h2>
+<div class="g"><div class="c"><b>Rủi ro chính</b>Bỏ sót chủ đề (tệ nhất) và đáp án sai do AI. Cách giảm: trích nguồn, sinh viên duyệt, nếu AI không chắc thì báo chứ không bịa.</div>
+<div class="c"><b>Đo bằng</b>Phủ CLO ≥ 90% · đúng ≥ 95% · câu dùng được ≥ 80% · bắt đúng chỗ yếu ≥ 80% · tiết kiệm ≥ 40% thời gian</div>
+<div class="c"><b>Pilot</b>1 môn, 5–10 sinh viên + khảo sát ≥ 15 bạn</div>
+<div class="c"><b>Dừng nếu</b>&lt; 50% thấy đau thật, hoặc đúng &lt; 95%, phủ &lt; 90%, tiết kiệm &lt; 20% → quay về Rule / ghi chú thủ công</div></div></section>
+
+<div id="nav"><button id="p" aria-label="Trước">←</button><span id="n"></span><button id="x" aria-label="Sau">→</button></div>
+<script>
+var S=[].slice.call(document.querySelectorAll('.s')),i=0;
+try{var h=parseInt(location.hash.slice(1),10);if(h>0&&h<=S.length)i=h-1}catch(e){}
+function go(k){i=Math.max(0,Math.min(S.length-1,k));S.forEach(function(s,j){s.classList.toggle('on',j===i)});
+document.getElementById('n').textContent=(i+1)+' / '+S.length;
+document.getElementById('bar').style.width=((i+1)/S.length*100)+'%';
+try{history.replaceState(null,'','#'+(i+1))}catch(e){}}
+document.getElementById('p').onclick=function(){go(i-1)};
+document.getElementById('x').onclick=function(){go(i+1)};
+document.addEventListener('keydown',function(e){
+if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
+else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();go(i-1)}
+else if(e.key==='Home')go(0);else if(e.key==='End')go(S.length-1)});
+var sx=null;document.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)go(i+(d<0?1:-1));sx=null});
+go(i);
+</script></body></html>
