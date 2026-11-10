@@ -79,6 +79,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
     * Phần 4.1–4.3: Quy trình hiện tại, quy trình tương lai và bảng Before/After.
     * Phần 5: Problem Statement v0.
 - Commit: 7f891c716666fd10314c321252621af50197b2eb, fc0411262e3a188746eebd4f5c7afbf6bed5cbcc, afb9424385c505dbaca812d9548e345c8776d6d3, 275a4c96efe9a0fc19f2d0584c62114403375656
+
 **Điều mình học được từ phần nhóm:**
 
 - Học được rằng việc xác định vấn đề cần dựa trên hành vi và bằng chứng thực tế của người dùng, không nên chỉ dựa vào giả định ban đầu
