@@ -12,8 +12,8 @@
 
 | STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
 |---:|---|---|---|---|
-| 1 | Hoàng Xuân Lĩnh | 2A202604017 | Nhóm trưởng, phụ trách chọn candidae, Problem Statement | hxlinh |
-| 2 | | | | |
+| 1 | Hoàng Xuân Lĩnh | 2A202604017 | Nhóm trưởng, phụ trách chọn candidate, Problem Statement | hxlinh |
+| 2 | Nguyễn Năng Thịnh | 2A202604028 | Phụ trách Kiểm chứng và Research, Hội tụ nhóm, Problem Statement | Thinh010705 |
 | 3 | | | | |
 | 4 | | | | |
 
@@ -58,20 +58,29 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Cần hiểu rõ vấn đề và có bằng chứng trước khi nghĩ đến giải pháp, và chọn mức can thiệp đơn giản nhất đủ dùng.
 
-### HoVaTen-MSSV
+### NguyenNangThinh_2A202604028
 
 **Phần việc phụ trách:**
 
--
+- Research và kiểm chứng: Phụ trách nghiên cứu các giải pháp hiện có, kiểm chứng giả định thông qua phỏng vấn và khảo sát
+- Hỗ trợ viết Problem Statement, phân tích quy trình hiện tại/tương lai và xây dựng bảng Before/After
 
 **Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
 
--
+- Tham gia kiểm chứng vấn đề bằng cách phân tích kết quả phỏng vấn 3 sinh viên và khảo sát 4 người trong lớp, qua đó xác định mức độ phổ biến của khó khăn khi tổng hợp tài liệu và tìm kiếm đề ôn tập
+- Phân tích kết quả kiểm chứng để giúp nhóm thu hẹp phạm vi vấn đề: tập trung vào việc gom và tổng hợp tài liệu từ nhiều nguồn, thay vì xem việc tìm kiếm đề thi là khó khăn chung của tất cả sinh viên.
+- Đóng góp ý kiến trong quá trình hoàn thiện Problem Statement, quy trình trước/sau và bảng Before/After, giúp làm rõ thời gian thực hiện, các bước được AI hỗ trợ và những rủi ro phát sinh
 
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
--
+- report/team/group_report.md:
+    * Phần 3.1–3.2: Assumption Map và kết quả kiểm chứng phỏng vấn, khảo sát.
+    * Phần 3.3: Research các giải pháp hiện có.
+    * Phần 4.1–4.3: Quy trình hiện tại, quy trình tương lai và bảng Before/After.
+    * Phần 5: Problem Statement v0.
+- Commit: 7f891c716666fd10314c321252621af50197b2eb, fc0411262e3a188746eebd4f5c7afbf6bed5cbcc, afb9424385c505dbaca812d9548e345c8776d6d3, 275a4c96efe9a0fc19f2d0584c62114403375656
 
 **Điều mình học được từ phần nhóm:**
 
--
+- Học được rằng việc xác định vấn đề cần dựa trên hành vi và bằng chứng thực tế của người dùng, không nên chỉ dựa vào giả định ban đầu
+- Một giải pháp có nhiều tính năng không đồng nghĩa với việc nó giải quyết tốt vấn đề. Cần phân tích những gì công cụ hiện có đã làm được và khoảng trống thực sự còn tồn tại
