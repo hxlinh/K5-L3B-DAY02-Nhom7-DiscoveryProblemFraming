@@ -24,12 +24,9 @@
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+| 7 | Thịnh | Khi nộp báo cáo tiến độ cho GVHD, tôi muốn nhận được phản hồi sớm và cụ thể để biết cần điều chỉnh bài như thế nào | Sinh viên, giảng viên hướng dẫn | Chờ khoảng 4 ngày mới nhận được phản hồi; phản hồi đôi khi chung chung khiến sinh viên phải tự diễn giải. | Tình trạng chờ 4 ngày xảy ra thường xuyên hay chỉ trong một số thời điểm? Bottleneck nằm ở lịch làm việc của giảng viên hay quy trình phản hồi? |
+| 8 | Thịnh | Khi cần trích dẫn một nguồn đã đọc, tôi muốn tìm lại đúng trang và thông tin để không phải đọc lại toàn bộ tài liệu | Sinh viên năm cuối làm khóa luận | Trong 1 tháng có 5 lần phải đọc lại cả tài liệu để tìm đúng trích dẫn; mỗi lần mất khoảng 1 giờ. | Vấn đề này có thực sự nghiêm trọng nếu sinh viên ghi chú trang và đoạn ngay từ lúc đọc tài liệu? |
+| 9 | Thịnh | Khi viết cơ sở lý thuyết, tôi muốn nhanh chóng so sánh các nghiên cứu cùng chủ đề để lựa chọn luận điểm phù hợp | Sinh viên năm cuối làm khóa luận | Đọc khoảng 20 papers, mất khoảng 5 giờ để lập bảng và so sánh thủ công cho một mục; đã phải làm lại 2 lần vì bảng không nhất quán. | 5 giờ bao gồm cả đọc, ghi chú, lập bảng và kiểm tra lại. Nếu chỉ tính thời gian lập bảng và đối chiếu thì bottleneck còn lớn không? |
 
 ### 2.2. Cluster
 
