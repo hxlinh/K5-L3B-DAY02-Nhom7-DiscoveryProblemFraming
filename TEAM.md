@@ -14,7 +14,7 @@
 |---:|---|---|---|---|
 | 1 | Hoàng Xuân Lĩnh | 2A202604017 | Nhóm trưởng, phụ trách chọn candidate, Problem Statement | hxlinh |
 | 2 | Nguyễn Năng Thịnh | 2A202604028 | Phụ trách Kiểm chứng và Research, Hội tụ nhóm, Problem Statement | Thinh010705 |
-| 3 | | | | |
+| 3 | Nguyễn Công Tú | 2A202604008| Phụ trách Mức can thiệp + Problem Statement v1 và Quyết định | nguyencongtu4800 |
 | 4 | | | | |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
@@ -84,3 +84,27 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 
 - Học được rằng việc xác định vấn đề cần dựa trên hành vi và bằng chứng thực tế của người dùng, không nên chỉ dựa vào giả định ban đầu
 - Một giải pháp có nhiều tính năng không đồng nghĩa với việc nó giải quyết tốt vấn đề. Cần phân tích những gì công cụ hiện có đã làm được và khoảng trống thực sự còn tồn tại
+
+
+### NguyenCongTu-2A202604008
+
+**Phần việc phụ trách:**
+
+- Phụ trách chính CP6: mức can thiệp AI, Problem Statement v1 và quyết định Go/Not Yet/No-Go.
+- Tham gia pitch, gom cluster và góp ý quy trình, kiểm chứng cùng nhóm.
+
+**Đóng góp cụ thể** (mình đã làm gì, ra sản phẩm gì):
+
+- Phụ trách chính phần mức can thiệp AI (CP6): đặt bài toán vào ma trận độ mơ hồ × độ phức tạp, so sánh 4 mức No AI / Rule / Workflow / Agent, hoàn thiện AI Canvas và phân tích Google PAIR, qua đó cùng nhóm chốt mức Workflow vì quy trình đã rõ và dễ kiểm soát hơn Agent
+- Hoàn thiện Problem Statement v1 từ v0: bổ sung Boundary, điểm can thiệp AI, Success Metric có baseline và mục tiêu, cùng 5 tiêu chí đánh giá đầu ra của AI (độ phủ CLO, độ trung thực, độ phù hợp của câu hỏi, phát hiện lỗ hổng, thời gian tiết kiệm)
+- Đánh giá 4 rủi ro Value / Usability / Feasibility / Viability và đề xuất kết luận Go có điều kiện, kèm pilot nhỏ (1 môn, 5–10 sinh viên) và các ngưỡng dừng để quay về Rule hoặc No AI khi chưa đạt
+- Tham gia pitch 3 problem trong bảng 2.1, gom cluster và góp ý quy trình trước/sau, giúp nhóm có thêm cơ sở để so sánh các candidate
+
+**Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
+
+- group_report.md: phần 2.1 (pitch), 6, 7, 8
+- Commit: 79ddd20909b4ba2a83444d0d53d5737c2533eb72; a427b470064656f75bb7f09bba11692fbb3c9f7b; 36344aec5cdc19691011408c85a00f4556d118fa; e34cc0f842ffcd4a20f36f18704d1e27b2016749; 365135a0de69168426417b3d42e4d7c3f775386f
+
+**Điều mình học được từ phần nhóm:**
+
+- Chọn mức can thiệp AI nên bắt đầu từ mức đơn giản nhất đủ dùng, và cần có ngưỡng dừng để biết khi nào quay về No AI hoặc Rule.
